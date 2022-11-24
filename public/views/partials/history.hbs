@@ -1,0 +1,17 @@
+<div class="table-responsive mt-5">
+        <table class=" table table-striped">
+            <tr style="font-size: 25px;">
+                <th >Nombre</th>
+                <th >Precio</th>
+                <th >Imagen</th>
+            </tr>
+    {{#each products}}
+            <tr>
+                <td>{{this.title}}</td>
+                <td>{{this.price}}</td>
+                <td><img width="50" src={{this.thumbnail}} alt={{this.id}}></td>
+            </tr>
+    {{/each}}
+        </table>
+    </div>
+
